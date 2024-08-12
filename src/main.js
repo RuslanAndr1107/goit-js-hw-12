@@ -66,9 +66,8 @@ function onSearch(event) {
           message: "Sorry, there are no images matching your search query. Please try again!",
         });
       loader.style.display = "none";
-      loadBtn.style.display = "none";
+    loadBtn.style.display = "none";
         return;
-        loadBtn.style.display = "none";
       }
 
       gallery.insertAdjacentHTML("beforeend", createMarkup(data.hits));
@@ -78,10 +77,8 @@ function onSearch(event) {
       formSearch.reset();
     })
     .catch((err) => {
-      console.log(err);
       loader.style.display = "none";
-      loadBtn.style.display = "none";
-     
+      console.log(err);
     });
 }
 
