@@ -44,13 +44,13 @@ function onSearch(event) {
     });
 
     loader.style.display = "none";
-
+  loadBtn.style.display = "none";
     return;
 }
 
   getPictures(inputValue, currentPage)
     .then(({ data }) => {
-      loader.style.display = "none";
+  
 
       const totalPages = Math.ceil(data.totalHits / perPage);
 
@@ -65,7 +65,8 @@ function onSearch(event) {
           title: "Error",
           message: "Sorry, there are no images matching your search query. Please try again!",
         });
-
+      
+    loadBtn.style.display = "none";
         return;
       }
 
