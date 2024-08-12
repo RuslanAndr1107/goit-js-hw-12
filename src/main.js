@@ -67,7 +67,7 @@ function onSearch(event) {
         });
       loader.style.display = "none";
     loadBtn.style.display = "none";
-        return;
+       
       }
 
       gallery.insertAdjacentHTML("beforeend", createMarkup(data.hits));
