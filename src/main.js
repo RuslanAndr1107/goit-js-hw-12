@@ -106,7 +106,7 @@ function onLoadMore() {
               return;
           }
 
-          loadBtn.style.display = "block";
+        
       })
       .catch(error => console.log(error));
 }
