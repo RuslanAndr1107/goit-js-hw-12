@@ -86,7 +86,11 @@ function onLoadMore() {
   loadBtn.style.display = "none";
 
   getPictures(inputValue, currentPage)
-      .then(({ data }) => {
+    .then(({ data }) => {
+      console.log(
+        "DEBUGGER"
+      )
+
           gallery.insertAdjacentHTML("beforeend", createMarkup(data.hits));
 
           refreshPage.refresh();
