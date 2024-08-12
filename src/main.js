@@ -50,9 +50,6 @@ function onSearch(event) {
 
 getPictures(inputValue, currentPage)
   .then(({ data }) => {
-  
-    console.log('LOADER', loadBtn, loader);
-
     const totalPages = Math.ceil(data.totalHits / perPage);
 
     if (currentPage === totalPages) {
