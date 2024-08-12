@@ -65,6 +65,7 @@ function onSearch(event) {
           title: "Error",
           message: "Sorry, there are no images matching your search query. Please try again!",
         });
+        console.log('LOADER', loadBtn, loader);
       loader.style.display = "none";
     loadBtn.style.display = "none";
        
